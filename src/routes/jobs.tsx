@@ -36,7 +36,7 @@ function ListJobs({ jobs }: { jobs: Job[] }) {
   const navigation = useNavigation();
   const location = searchParams.get("location") || "";
   const description = searchParams.get("description") || "";
-  const is_remote_work = searchParams.get("remote_work");
+  // const is_remote_work = searchParams.get("remote_work");
   const page = searchParams.get("page") || 1;
   const nextPage = Number(page)  + 1;
 
@@ -88,7 +88,7 @@ function ItemJob({ job }: { job: Job }) {
 }
 
 function FilterJobs() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams,] = useSearchParams();
   const navigation = useNavigation();
   const location = searchParams.get("location") || "";
   const description = searchParams.get("description") || "";

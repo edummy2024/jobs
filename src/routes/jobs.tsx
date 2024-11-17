@@ -40,7 +40,6 @@ function ListJobs({ jobs }: { jobs: Job[] }) {
   const page = searchParams.get("page") || 1;
   const nextPage = Number(page)  + 1;
 
-  console.log(page)
   function handleLoadMore() {
     setSearchParams({
       location: location,
